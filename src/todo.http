@@ -1,0 +1,107 @@
+### Test Route
+GET http://localhost:8081
+
+### Create a User
+POST http://localhost:8081/auth/register
+Content-Type: application/json
+
+{
+    "firstName": "endrick",
+    "lastName": "amar",
+    "email": "kenrick4@gmail.com",
+    "password": "mypassword123"
+}
+###create a customer
+GET  http://localhost:8081/customer/reservation/4
+
+### create a new User
+POST http://localhost:8081/auth/register
+Content-Type: application/json
+
+{
+    "firstName": "Hey",
+    "lastName": "Now",
+    "email": "GNX@gmail.com",
+    "password": "Musiala3"
+}
+
+###  Get all Cars
+GET  http://localhost:8081/car
+
+
+### Create a car 
+POST  http://localhost:8081/car
+Content-Type: application/json
+
+{
+            "carID": 72,
+            "carModel": "Porche Tychaan",
+            "year": "2022-05-01",
+            "color": "Silver",
+            "rentalRate": "45.50",
+            "availability": true,
+            "locationID": 2
+        }
+
+
+
+### delete a INSURANCE
+DELETE http://localhost:8081/insurance/4
+
+
+### get all insurance
+### Create a car 
+POST  http://localhost:8081/car
+Content-Type: application/json
+
+{
+    "carID": 72,
+    "carModel": "Porche Tychaan",
+    "year": "2022-05-01",
+    "color": "Silver",
+    "rentalRate": "45.50",
+    "availability": true,
+    "locationID": 2
+}
+
+### delete a INSURANCE
+DELETE http://localhost:8081/insurance/4
+    "password": "kdot"
+    
+
+
+
+
+
+{
+    "email": "GNX@gmail.com",
+    "password": "Musiala3"
+    
+}
+
+
+
+        
+
+###login a user 
+POST http://localhost:8081/auth/login
+Content-Type: application/json
+
+{
+    "email": "peekaboo@gmail.com",
+    "password": "kdot"
+}
+
+###login another user 
+POST http://localhost:8081/auth/login
+Content-Type: application/json
+
+{
+    "email": "GNX@gmail.com",
+    "password": "Musiala3"
+}
+
+
+
+
+GET  http://localhost:8081/car

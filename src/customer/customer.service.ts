@@ -11,7 +11,7 @@ export const getCustomerWithReservations = async (customerID: number) => {
     return await db.query.CustomerTable.findFirst({
         where: eq(CustomerTable.customerID, customerID),
         with: {
-            reservations: true
+            reservations: true 
         }
     })
 }
@@ -27,6 +27,8 @@ with: {
         }
     })
 }
+
+
 
 
 
